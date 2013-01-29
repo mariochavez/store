@@ -20,6 +20,9 @@ Store::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # Version of your assets, change this if you want to expire all your assets.
+  config.assets.version = '1.0'
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
@@ -31,7 +34,7 @@ Store::Application.configure do
   # config.force_ssl = true
 
   # See everything in the log (default is :info)
-  # config.log_level = :debug
+  config.log_level = :info
 
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
@@ -64,4 +67,7 @@ Store::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  config.log_formatter = ::Logger::Formatter.new
+
 end
