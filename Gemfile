@@ -29,6 +29,8 @@ gem 'haml-rails'
 
 group :development, :test do
   gem 'cane'
+  gem 'better_errors'
+  gem 'meta_request'
 end
 
 group :test do
