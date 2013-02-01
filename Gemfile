@@ -31,6 +31,7 @@ group :development, :test do
   gem 'cane'
   gem 'better_errors'
   gem 'meta_request'
+  gem 'mac_generators'
 end
 
 group :test do
@@ -51,3 +52,5 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+gem "bootstrap-sass"

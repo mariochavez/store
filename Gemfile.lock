@@ -86,6 +86,8 @@ GEM
     better_errors (0.3.2)
       coderay (>= 1.0.0)
       erubis (>= 2.7.0)
+    bootstrap-sass (2.2.1.1)
+      sass (~> 3.2)
     builder (3.1.4)
     cane (2.5.2)
       parallel
@@ -111,6 +113,8 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.6)
+    mac_generators (0.0.1)
+      rails (~> 4.0.0.beta)
     mail (2.5.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -166,10 +170,12 @@ DEPENDENCIES
   activerecord-deprecated_finders!
   arel!
   better_errors
+  bootstrap-sass
   cane
   coffee-rails!
   haml-rails
   jquery-rails
+  mac_generators
   meta_request
   minitest-rails
   pg
