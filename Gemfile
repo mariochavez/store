@@ -25,6 +25,7 @@ end
 
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'haml-rails'
 
 group :development, :test do
   gem 'cane'

@@ -1,0 +1,8 @@
+%h1 Products list
+%span= flash[:notice]
+%p= link_to 'New product', new_product_path
+%ul
+  - @products.each do |product|
+    %li{:id => "product_#{product.id}"}
+      = product.name
+      | #{link_to 'Show', product}
